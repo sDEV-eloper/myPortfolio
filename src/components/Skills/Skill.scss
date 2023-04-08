@@ -1,0 +1,207 @@
+@import "../../style-config/variable.scss";
+@import "../../style-config/mixins.scss";
+.section{
+  // border: 2px solid red;
+  color: #53ff43;
+  @include mobile{
+    height: 1180px;
+  }
+  
+  h2{
+    // border: 2px solid red;
+    color:white;
+    text-decoration: underline;
+    margin-top: -80px;
+    margin-bottom: 20px;
+    @include mobile{
+      font-size: 25px;
+    }
+  }
+  .skills-content-wrapper {
+    // margin-top: -20px;
+    // border: 2px solid red;
+  background-color: rgb(25, 24, 24);
+  display: flex;
+  border-radius: 25px;
+  height: 550px;
+  align-items: center;
+  flex-direction: row;
+  @include mobile {
+    flex-direction: column;
+    height: 1100px;
+  }
+
+
+.right-col {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    color: white;
+    justify-content: flex-end;
+      // border: 2px solid red; 
+      @include mobile {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: -20px;
+      }
+      
+      .skill-logo {
+      // border: 2px solid red; 
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      gap: 10px;
+      @include mobile{
+        width: 100%;
+        gap: 0px;
+        margin-top: 0px;
+        margin-left: 10px;
+      }
+      .logo-name {
+        display: flex;
+        margin-top: 4px;
+        align-items: center;
+        gap: 10px;
+        @include mobile{
+        margin-top: 0;
+        // border: 2px solid blue;
+        
+        }
+
+        img {
+          width: 40px;
+        }
+      }
+      .container {
+        width: 100%;
+        background-color: #c3c3c3;
+        height: 30.5px;
+        border-radius: 25px;
+        // align-content:flex-start ;
+        margin-right: 20px;
+        @include mobile{
+          height: 25px;
+
+        }
+
+      }
+
+      .skills {
+        text-align: right;
+        padding: 5px 5px;
+        color: white;
+        border-radius: 25px 0 0 25px;
+        @include mobile{
+          height: 25px;
+        }
+      }
+
+      .html {
+        width: 90%;
+        background-color: #FF6D00;
+      }
+      .css {
+        width: 80%;
+        background-color: #0398E1;
+       
+      }
+      .js {
+        width: 80%;
+        background-color: #F2DB1D;
+      }
+      .reactjs {
+        width: 75%;
+        background-color: #3071ff;
+      }
+      .c {
+        width: 70%;
+        background-color: #3848A8;
+      }
+      .java {
+        width: 70%;
+        background-color: #F44336;
+      }
+      .sql {
+        width: 60%;
+        background-color: #19a10a;
+      }
+      .bootstrap {
+        width: 60%;
+        background-color: #673AB7;
+      }
+      .sass {
+        width: 80%;
+        background-color: #F06292;
+      }
+    }
+  }
+  .left-col {
+    // border: 2px solid rgb(9, 255, 0);
+    width: 60%;
+    color: $white;
+    text-align: justify;
+    height: 100%;
+    margin:0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    @include mobile {
+      margin-left: 5px;
+      text-align: center;
+      width: 100%;
+      text-align: center;
+      margin-top: 5px;
+      padding: 0 10px;
+    }
+    h2 {
+      margin-bottom: 30px;
+      @include mobile {
+        margin-bottom: 10px;
+      }
+    }
+    h4{
+      color: rgb(160, 153, 153);
+      text-decoration: underline;
+      margin-top: -20px;
+      margin-bottom: 30px;
+      @include mobile{
+        margin-top: 20px;
+      }
+    }
+    p {
+      @include typography(18px, 400, 24px);
+      margin-bottom: 35px;
+      @include mobile {
+        @include typography(14px, 400, 20px);
+      }
+    }
+    .btn{
+      // background:white;
+      border:1px solid black;
+      border-radius: 20px;
+      width: 140px;
+      height: 40px;
+      font-size: 15px;
+      cursor: pointer;
+      @include mobile{
+          width: 70%;
+          padding: 5px 10px;
+          margin-bottom: 50px;
+      }
+      &:hover{
+          background-image: linear-gradient( 135deg,  #9c99ff 10%, #82ffee 100%);          
+                      border: 1.5px solid black;
+      }
+     
+  }
+  @include mobile{
+      justify-content: center;
+  }
+}
+  }
+
+}

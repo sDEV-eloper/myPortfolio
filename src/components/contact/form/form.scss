@@ -1,0 +1,114 @@
+
+@import "../../../style-config/variable.scss";
+@import "../../../style-config/mixins.scss";
+
+    
+    .query-form {
+        width: calc(100% - 375px);
+        margin-left: 20px;
+        @include mobile{
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 0;
+        }
+        form {
+            // border: 2px solid red;
+            display: flex;
+            flex-flow: row wrap;
+            margin-top: -10px;
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                margin-top: 0;
+                
+            }
+        .input-field {
+            // border: 2px solid rgb(0, 225, 255);
+            width: calc(50% - 20px);
+            margin: 10px;
+            &.full-width {
+                width: 100%;
+                // height: 50%;
+                // border: 2px solid red;
+            }
+            @include mobile{
+                &.full-width {
+                    width: 94%;
+                    // height: 60%;
+                }
+              width: 94%;
+             border-radius: 10px;
+             margin: 8px;
+            }
+            input {
+                width: 100%;
+                height: 57px;
+                border: 1px solid rgba(255, 255, 255, 0.354);
+                border-radius: 16px;
+                background-color: transparent;
+                outline: 0;
+                padding: 10px 20px;
+                color: $white;
+                @include mobile{
+                    height: 45px;
+                }
+                @include typography(18px, 400, 24px);
+                &:focus {
+                    border-color: $white;
+                }
+            }
+           
+            .textarea {
+                width: 100%;
+                height: 250px;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                border-radius: 16px;
+                background-color: transparent;
+                outline: 0;
+                padding: 10px 20px;
+                color: $white;
+                resize: none;
+                @include typography(18px, 400, 24px);
+                &:focus {
+                    border-color: $white;
+                }
+                @include mobile{
+                    height: 150px;
+                }
+              
+            }
+            .errors {
+                color: $white;
+                @include typography(12px, 400, 24px);
+            }
+        }
+        .btn{
+            // border: 2px solid red;
+            @include mobile{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               
+            }
+        button {
+            outline: 0;
+            border: 0;
+            width: 100px;
+            height: 40px;
+            background: $white;
+            border-radius: 50px;
+            @include typography(18px, 400, 24px);
+            margin-left: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            @include mobile{
+                width: 50%;
+            }
+            &:hover{
+                background-color: #109d00;
+                color: white;
+            }
+        }
+    }
+    }
+}

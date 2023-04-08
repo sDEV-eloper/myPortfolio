@@ -1,0 +1,136 @@
+
+@import "../../style-config/variable.scss";
+@import "../../style-config/mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Ubuntu:wght@300;400&display=swap');
+
+.contact-content-wrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    // border: 2px solid blue;
+    @include mobile{
+        flex-direction: column;
+        margin-top: 0px;
+
+    }
+}
+
+.contact-info-box {
+    // border: 2px solid rgb(255, 247, 0);
+    background-color: $black-lighter;
+    width: 355px;
+    padding: 30px;
+    border-radius: 6px;
+    color: $gray;
+    @include mobile{
+       width: 100%;
+       padding: 15px;
+    }
+    p{
+        margin-bottom: 20px;
+        text-align: justify;
+        @include mobile{
+            @include typography(20px, 500, 30px);
+            // text-align: justify;
+        }
+.location{
+    border: 2px solid rgb(44, 43, 43);
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    @include mobile{
+        padding: 0;
+    }
+    // justify-content: center;
+    img {
+        width: 40px;
+        height: 40px;
+        // margin-left: 10px;
+    }
+    .text{
+    //    border: 2px solid red;
+        @include mobile{
+            color:white;
+            font-weight: 0;
+            text-align: center;
+        }
+    .flag{
+        align-content: center;
+        width: 35px;
+        height: 35px;
+        @include mobile{
+            display: none;
+        }
+    }
+}
+   
+}
+hr{
+border: 1px solid rgb(67, 67, 67);
+}
+    }
+    .contact-button{
+        // border: 2px solid red; 
+        display: flex;
+        margin-top: -8px;
+        justify-content:space-between;
+        // gap: 40px;
+    a{
+        text-decoration: none;
+    .contact-option {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        width: 100%;
+        padding: 0 30px;
+        border-radius: 25px;
+        background-color: #fff;
+        // border: 5px solid rgb(0, 113, 11);
+        
+        img {
+            color: $yellow;
+            width: 42px;
+            height: 42px;
+
+        }
+     
+    .contact-img{
+        // border: 1px solid rgb(61, 61, 61);
+        border-radius: 50%;
+        padding: 4px;
+        background: #e2e2e28e;
+        margin-left: -32px;
+        
+    }
+      
+        .text {
+            margin-left: 15px;
+            color: rgb(0, 0, 0);
+        }
+   
+        &:hover{
+            background-color: #00b837;
+            .text{
+                color: white;
+            }
+        }
+    }
+}
+}
+hr{
+    border: 1px solid rgb(67, 67, 67);
+    }
+.info{
+    margin-top: 10px;
+    display: flex;
+    gap: 25px;
+    font-size: 15px;
+    span{
+        font-weight: normal;
+        color: #e3e3e3;
+    }
+}
+}

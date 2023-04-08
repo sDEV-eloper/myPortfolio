@@ -1,0 +1,44 @@
+@import "../../../style-config/variable.scss";
+@import "../../../style-config/mixins.scss";
+
+
+.section {
+    padding: 100px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    // border: 2px solid rgb(72, 255, 0);
+    @include mobile{
+        // height: 1000px;
+    }
+    
+    &.dark {
+        background-color: $black;
+    }
+    &.light {
+        background-color: $black-light;
+    }
+    .content {
+        width: 1200px;
+        padding: 0 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top:0px;
+        
+        
+        h2{
+            //    margin-left: 350px;
+            // border: 2px solid rgb(60, 245, 230);
+            text-align: center;
+            @include mobile{
+                width: 100%;
+                text-align: center;
+                color: $white;
+                max-width: 500px;
+                margin-bottom: 20px;
+            }
+            
+        }
+    }
+}
