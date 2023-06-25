@@ -38,7 +38,7 @@ function IntroContent() {
           <div className="button-box">
             <button
               className="btn"
-              role="button"
+              // role="button"
               onClick={() => {
                 downloadFileAtURL(PDF_FILE_URL);
               }}

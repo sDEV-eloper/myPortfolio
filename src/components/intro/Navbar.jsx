@@ -3,7 +3,7 @@ import {CgMenuRight} from 'react-icons/cg'
 import {IoMdClose} from 'react-icons/io'
 import './navbar.scss'
 import logo from '../../images/logo2.png'
-import { scrollToSecton } from '../utils/helper'
+import { scrollToSection } from '../utils/helper'
 import {AiOutlineMenu} from 'react-icons/ai'
 import {AiOutlineSetting} from 'react-icons/ai'
 
@@ -13,7 +13,7 @@ function Navbar() {
   const[mobileMenu, setMobileMenu]=useState(false);
   const menuItemClickHandler=(section)=>{
     setMobileMenu(!mobileMenu);
-    scrollToSecton(section);
+    scrollToSection(section);
   }
   return (
    <div className="top-navigation-bar">

@@ -4,7 +4,7 @@ import './footer.scss'
 import Logo from '../../images/logo2.png'
 import Github from '../../images/github.png'
 import LinkedIn from '../../images/linkedin.png'
-import { scrollToSecton } from '../utils/helper'
+import { scrollToSection } from '../utils/helper'
 
 const Footer = () => {
     return (
@@ -24,25 +24,25 @@ const Footer = () => {
                 <ul className="footer-menu-items">
                        <li
                         className="footer-menu-item"
-                        onClick={() => scrollToSecton("home")}
+                        onClick={() => scrollToSection("home")}
                     >
                         Home
                     </li>
                     <li
                         className="footer-menu-item"
-                        onClick={() => scrollToSecton("skills")}
+                        onClick={() => scrollToSection("skills")}
                     >
                         Skills
                     </li>
                     <li
                         className="footer-menu-item"
-                        onClick={() => scrollToSecton("portfolio")}
+                        onClick={() => scrollToSection("portfolio")}
                     >
                         Portfolio
                     </li>
                     <li
                         className="footer-menu-item"
-                        onClick={() => scrollToSecton("contact")}
+                        onClick={() => scrollToSection("contact")}
                     >
                         Contact me
                     </li>
