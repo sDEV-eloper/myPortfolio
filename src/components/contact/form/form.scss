@@ -49,6 +49,7 @@
                 outline: 0;
                 padding: 10px 20px;
                 color: $white;
+          
                 @include mobile{
                     height: 45px;
                 }
@@ -80,6 +81,7 @@
             .errors {
                 color: $white;
                 @include typography(12px, 400, 24px);
+                color: rgb(255, 238, 0);
             }
         }
         .btn{

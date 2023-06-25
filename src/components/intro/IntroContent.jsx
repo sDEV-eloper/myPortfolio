@@ -3,7 +3,9 @@ import "./IntroContent.scss";
 import hand from "../../images/hand.png";
 import boy from "../../images/boy2.png";
 
-const PDF_FILE_URL = "http://localhost:3000/myResume.pdf";
+const websiteUrl = window.location.href;
+// console.log("web Url :  "+websiteUrl)
+const PDF_FILE_URL = `${websiteUrl}/SurajSinghResume.pdf`;
 
 function IntroContent() {
   const downloadFileAtURL = (url) => {
@@ -44,7 +46,7 @@ function IntroContent() {
               Get Resume
             </button>
             <button className="btn view" >
-              <a href="https://drive.google.com/file/d/1Kt7DjMyBQbP97qrQDvFbJyi3GwQjZsd1/view?usp=share_link"  target="blank"  >
+              <a href="https://drive.google.com/file/d/1q2BXM5twpbT3vhjUtlTdN7k5jhVLwPCP/view?usp=share_link"  target="blank"  >
                 View Resume
               </a>
             </button>
